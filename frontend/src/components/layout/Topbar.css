@@ -1,0 +1,56 @@
+.topbar-container {
+  height: 64px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 32px;
+  width: 100%;
+}
+
+.topbar-user-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 8px;
+  transition: background-color 0.15s ease;
+}
+
+.topbar-user-profile:hover {
+  background-color: #f3f4f6;
+}
+
+.topbar-profile-info {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.topbar-username {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.topbar-user-role {
+  font-size: 11px;
+  color: #6b7280;
+  font-weight: 400;
+}
+
+.topbar-avatar {
+  width: 36px;
+  height: 36px;
+  background-color: #3b82f6;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  border: 2px solid #eff6ff;
+}

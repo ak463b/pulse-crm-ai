@@ -1,0 +1,79 @@
+/* Import your CSS variables (colors, spacing, etc.) */
+@import './variables.css';
+
+/* ==========================================================================
+   Base Reset
+   ========================================================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, 
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* Scrolling is handled inside the MainLayout components */
+}
+
+/* ==========================================================================
+   Global Typography & Body 
+   ========================================================================== */
+body {
+  /* Enforces the Google Inter font globally */
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  
+  /* Fallback colors in case variables.css isn't loaded yet */
+  background-color: var(--background-color, #f4f5f7);
+  color: var(--text-main, #374151);
+  
+  /* Font smoothing for crisp text on high-res monitors */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: var(--text-main, #1f2937);
+  line-height: 1.2;
+}
+
+a {
+  color: var(--primary-color, #3b82f6);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: var(--primary-hover, #2563eb);
+}
+
+/* ==========================================================================
+   Custom Scrollbar Styling
+   ========================================================================== */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* Input resets for consistency */
+input, select, textarea, button {
+  font-family: inherit;
+}
